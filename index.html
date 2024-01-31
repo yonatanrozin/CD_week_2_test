@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>welcome!</h1>
+        <button>click me!</button>
+        <input oninput="handleInput(event)"></input>
+        <p id="recentInput"></p>
+        <script>
+            function handleInput(e) {
+                document.getElementById("recentInput").innerHTML =
+                    "inputted: " + e.data;
+            }
+        </script>
+    </body>
+</html>
